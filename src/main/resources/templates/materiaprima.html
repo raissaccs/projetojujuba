@@ -5,9 +5,33 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <title>Jujuba Babys</title>
+    
+    <style type="text/css">
+body {
+margin:0;
+padding:0;
+text-align:center; /* hack para o IE */	
+	}
+#tudo {
+width: 760px;
+margin:0 auto;			
+padding: 10px;
+text-align:left; /* "remédio" para o hack do IE */	
+	}
+#conteudo {
+padding: 5px;
+
+	}
+</style>
+    
+    
 </head>
 <body>
 <body style="background-image: url(https://st2.depositphotos.com/3503231/8299/v/600/depositphotos_82996806-stock-illustration-pink-polka-dots-background-creative.jpg)">
+	
+<div id="tudo">
+<div id="conteudo">
+	
 	<b>
  
     <center><h3>Calcule o seu produto </h3> </center>  
@@ -15,12 +39,12 @@
 
 
 
-<div span class="border w-50 p-4 border-warning border-2">
+<div span class="border w-auto p-4 border-warning border-2">
 
 	<h5>Mão de Obra</h5>
 	
 	  <div class="mb-2 row">
-    <label for="staticEmail" class="col-sm-3 col-form-label">Valor da mão de obra:</label>
+    <label for="staticEmail" class="col-sm-4 col-form-label">Valor da mão de obra:</label>
     
     <div class="col-sm-2 w-auto p-2" style="background-color: #eee;">
       <input type="int" class="form-control-plaintext" id="valormaodeobra" value="">
@@ -28,7 +52,7 @@
   </div>
   
   <div class="mb-2 row">
-    <label for="inputPassword" class="col-sm-3 col-form-label">Horas trabalhadas:</label>
+    <label for="inputPassword" class="col-sm-4 col-form-label">Horas trabalhadas:</label>
     
     <div class="col-sm-2 w-auto p-2" style="background-color: #eee;">
       <input type="int" class="form-control-plaintext" id="horastrabalhadas" value="">
@@ -40,13 +64,13 @@
   
  
   
- <div span class="border w-50 p-4 border-warning border-2">
+ <div span class="border w-auto p-4 border-warning border-2">
   
   	<h5>Matéria Prima</h5>
   
   	
   	 <div class="mb-2 row">
-  	     <label for="staticEmail" class="col-sm-3 col-form-label">Tipo de matéria prima:</label>
+  	     <label for="staticEmail" class="col-sm-4 col-form-label">Tipo de matéria prima:</label>
     
     	<div class="col-sm-2 w-auto p-2" style="background-color: #eee;">
       <input type="text" class="form-control-plaintext" id="tipomateriaprima" value="">
@@ -54,7 +78,7 @@
   	</div>
   
   <div class="mb-2 row">
-    <label for="inputPassword" class="col-sm-3 col-form-label">Valor do matérial:</label>
+    <label for="inputPassword" class="col-sm-4 col-form-label">Valor do matérial:</label>
     
     <div class="col-sm-2 w-auto p-2" style="background-color: #eee;">
       <input type="int" class="form-control-plaintext" id="valormaterial" value="">
@@ -62,7 +86,7 @@
   </div>
   
   <div class="mb-2 row">
-    <label for="inputPassword" class="col-sm-3 col-form-label">Quantidade utilizada:</label>
+    <label for="inputPassword" class="col-sm-4 col-form-label">Quantidade utilizada:</label>
     
     <div class="col-sm-2 w-auto p-2" style="background-color: #eee;">
       <input type="int" class="form-control-plaintext" id="qtdutilizada" value="">
@@ -75,12 +99,12 @@
 	<div class="mb-4 row"> </div>
 
 
-<div span class="border w-50 p-4 border-warning border-2">
+<div span class="border w-auto p-4 border-warning border-2">
 
 	<h5>Lucro desejado</h5>
 	
   	 <div class="mb-2 row">
-    <label for="staticEmail" class="col-sm-3 col-form-label">% de lucro:</label>
+    <label for="staticEmail" class="col-sm-4 col-form-label">% de lucro:</label>
     
     <div class="col-sm-2 w-auto p-2" style="background-color: #eee;">
       <input type="int" class="form-control-plaintext" id="tipomateriaprima" value="">
@@ -97,6 +121,7 @@
   	</center>
   	
   </b>
+  </div>
   </div>
     
 </body>
