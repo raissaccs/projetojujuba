@@ -1,11 +1,18 @@
 package com.jujuba.jujubab.model;
 
 import javax.persistence.Entity;
+import javax.validation.constraints.NotBlank;
 
 @Entity
-public class maodeobra {
+public class maodeObra {
+	
+	@NotBlank
+	private Double valor;
 
-  public Double getValor() {
+	@NotBlank
+	private Double horas;
+
+	public Double getValor() {
 		return valor;
 	}
 
@@ -21,8 +28,4 @@ public class maodeobra {
 		this.horas = horas;
 	}
 
-private Double valor;
-  
-  private Double horas;
-	
 }
