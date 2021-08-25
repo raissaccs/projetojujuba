@@ -1,10 +1,20 @@
 package com.jujuba.jujubab.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 
 @Entity
-public class maodeObra {
+@Table(name="TB_MAODEOBRA")
+
+public class MaodeObra {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
 	
 	@NotBlank
 	private Double valor;
