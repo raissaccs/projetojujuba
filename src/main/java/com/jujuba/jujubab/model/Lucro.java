@@ -28,4 +28,11 @@ public class Lucro {
 		this.lucro = lucro;
 	}
 
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 }

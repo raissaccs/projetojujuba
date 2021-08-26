@@ -1,5 +1,7 @@
 package com.jujuba.jujubab.model;
 
+import java.sql.Time;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -20,7 +22,7 @@ public class MaodeObra {
 	private Double valor;
 
 	@NotBlank
-	private Double horas;
+	private Time horas;
 
 	public Double getValor() {
 		return valor;
@@ -30,12 +32,20 @@ public class MaodeObra {
 		this.valor = valor;
 	}
 
-	public Double getHoras() {
+	public Time getHoras() {
 		return horas;
 	}
 
-	public void setHoras(Double horas) {
+	public void setHoras(Time horas) {
 		this.horas = horas;
+	}
+	
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 }
